@@ -29,6 +29,11 @@ a:hover {
   background-color: DBB868;
 }
 
+a:visited {
+  background-color: black;
+  color: green;
+}
+
 @font-face {
   font-family: 'YourFont';
   src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');

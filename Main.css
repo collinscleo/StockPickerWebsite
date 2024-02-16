@@ -16,6 +16,18 @@ body {
   right: 5px;
 }
 
+#buttons {
+  position: sticky;
+  top: 0px;
+  right: 25px;
+  font-size: 25px;
+}
+
+a:hover {
+  color: black;
+  background-color: DBB868;
+}
+
 @font-face {
   font-family: 'YourFont';
   src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');

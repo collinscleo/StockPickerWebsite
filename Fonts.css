@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Fonts API Example</title>
+</head>
+<body>
+  <h1>Google Fonts</h1>
+  <ul id="fontList"></ul>
+
+  <script>
+    // Replace 'YOUR_GOOGLE_FONTS_API_KEY' with your actual Google Fonts API key
+    const apiKey = 'AIzaSyBoPiPk0Hgihn7eWO7xmNNiJ6aG8GHKpFM';
+    const apiUrl = `https://www.googleapis.com/webfonts/v1/webfonts?key=${apiKey}`;
+
+    async function fetchGoogleFonts() {
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (data.items) {
+          const fontList = document.getElementById('fontList');
+
+          data.items.forEach(font => {
+            const listItem = document.createElement('li');
+            listItem.textContent = font.family;
+            fontList.appendChild(listItem);
+          });
+        } else {
+          console.error('Error fetching fonts:', data.error.message);
+        }
+      } catch (error) {
+        console.error('Error fetching fonts:', error.message);
+      }
+    }
+
+    // Call the function to fetch Google Fonts
+    fetchGoogleFonts();
+  </script>
+</body>
+</html>

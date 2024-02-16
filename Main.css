@@ -17,9 +17,7 @@ body {
 }
 
 #buttons {
-  position: sticky;
-  top: 0px;
-  right: 25px;
+  position: center;
   font-size: 25px;
 }
 

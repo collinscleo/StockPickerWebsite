@@ -1,6 +1,7 @@
 body {
   background-color: black;
-  color: white;
+  color: green;
+  font-family: 'Alegreya', sans-serif; /* Use the custom font */
 }
 
 #header {
@@ -15,7 +16,7 @@ body {
   right: 5px;
 }
 
-a:hover {
-  color: black;
-  background-color: DBB868;
+@font-face {
+  font-family: 'YourFont';
+  src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');
 }

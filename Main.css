@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: green;
+  color: white;
 }
 
 #header {
@@ -16,6 +16,6 @@ body {
 }
 
 a:hover {
-  color: blue;
-  background-color: pink;
+  color: black;
+  background-color: DBB868;
 }

@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: green;
+  font-family: 'Alegreya', sans-serif; /* Use the custom font */
+}
+
+#header {
+  background-color: black;
+  color: white;
+  font-size: 45px;
+  position: center;
+}
+
+#img {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+#buttons {
+  position: center;
+  font-size: 25px;
+}
+
+a:hover {
+  color: black;
+  background-color: DBB868;
+}
+
+@font-face {
+  font-family: 'YourFont';
+  src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');
+}

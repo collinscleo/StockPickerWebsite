@@ -14,3 +14,8 @@ body {
   top: 0px;
   right: 5px;
 }
+
+a:hover {
+  color: blue;
+  background-color: pink;
+}

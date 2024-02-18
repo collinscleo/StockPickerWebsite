@@ -18,6 +18,21 @@ body {
   right: 5px;
 }
 
+#Picture1 {
+  position: absolute;
+  right: 0px;
+}
+#Picture2 {
+  position: absolute;
+}
+#Picture3 {
+  position: absolute;
+}
+#Picture4 {
+  position: absolute;
+  left: 0px;
+}
+
 #buttons {
   text-align: centered;
 }

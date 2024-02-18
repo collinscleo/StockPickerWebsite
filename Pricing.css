@@ -17,24 +17,9 @@ body {
   right: 5px;
 }
 
-#Picture1 {
+#Pricing {
   position: absolute;
   left: 0px;
-  top: 300px;
-}
-#Picture2 {
-  position: absolute;
-  left: 400px;
-  top: 300px;
-}
-#Picture3 {
-  position: absolute;
-  top: 300px;
-  right: 400px;
-}
-#Picture4 {
-  position: absolute;
-  right: 0px;
   top: 300px;
 }
 

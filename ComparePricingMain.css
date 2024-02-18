@@ -1,0 +1,51 @@
+body {
+  background-color: #DBB868;
+  color: brown;
+  font-family: 'Alegreya', sans-serif; /* Use the custom font */
+}
+
+#header {
+  background-color: #DBB868;
+  color: #000000;
+  font-size: 125px;
+  text-align: center;
+}
+
+#img {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+#Picture1 {
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, 0%);
+}
+
+#buttons {
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
+}
+
+a:hover {
+  color: #5C4033;
+  background-color: #747474;
+}
+
+a:visited {
+  background-color: #DBB868;
+  color: #5C4033;
+}
+
+a:unvisited {
+  background-color: #DBB868;
+  color: #5C4033;
+}
+
+@font-face {
+  font-family: 'YourFont';
+  src: url('C:\\Users\\Cleo Collins\\OneDrive\\Website_Stock_Picker\\Alegreya-Regular.ttf') format('truetype');
+}

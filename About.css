@@ -18,6 +18,10 @@ body {
   font-size: 25px;
 }
 
+#header2 {
+  text-align: centered;
+}
+
 a:hover {
   color: black;
   background-color: DBB868;

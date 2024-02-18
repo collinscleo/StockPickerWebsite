@@ -6,7 +6,7 @@ body {
 
 #header {
   background-color: #DBB868;
-  color: #5C4033;
+  color: black;
   font-size: 125px;
   text-align: center;
 }
@@ -45,7 +45,7 @@ body {
 
 a:hover {
   color: #5C4033;
-  background-color: gray;
+  background-color: #747474;
 }
 
 a:visited {

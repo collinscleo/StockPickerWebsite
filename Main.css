@@ -1,12 +1,12 @@
 body {
-  background-color: black;
-  color: green;
+  background-color: DBB868;
+  color: brown;
   font-family: 'Alegreya', sans-serif; /* Use the custom font */
 }
 
 #header {
-  background-color: black;
-  color: white;
+  background-color: DBB868;
+  color: 5C4033;
   font-size: 45px;
   position: relative;
   right: 10px;
@@ -23,18 +23,18 @@ body {
 }
 
 a:hover {
-  color: black;
-  background-color: DBB868;
+  color: 5C4033;
+  background-color: gray;
 }
 
 a:visited {
-  background-color: black;
-  color: green;
+  background-color: DBB868;
+  color: 5C4033;
 }
 
 a:unvisited {
-  background-color: black;
-  color: green;
+  background-color: DBB868;
+  color: 5C4033;
 }
 
 @font-face {

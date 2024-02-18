@@ -6,7 +6,7 @@ body {
 
 #header {
   background-color: #DBB868;
-  color: black;
+  color: #000000;
   font-size: 125px;
   text-align: center;
 }
@@ -41,6 +41,7 @@ body {
 #buttons {
   text-align: center;
   font-size: 25px;
+  color: #000000;
 }
 
 a:hover {
@@ -60,5 +61,5 @@ a:unvisited {
 
 @font-face {
   font-family: 'YourFont';
-  src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');
+  src: url('C:\Users\Cleo Collins\OneDrive\Website_Stock_Picker\Alegreya-Regular.ttf') format('truetype');
 }

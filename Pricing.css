@@ -20,17 +20,23 @@ body {
 
 #Picture1 {
   position: absolute;
-  right: 0px;
+  left: 0px;
+  top: 70px;
 }
 #Picture2 {
   position: absolute;
+  left: 50px;
+  top: 70px;
 }
 #Picture3 {
   position: absolute;
+  top: 70px;
+  right: 50px;
 }
 #Picture4 {
   position: absolute;
-  left: 0px;
+  right: 0px;
+  top: 70px;
 }
 
 #buttons {

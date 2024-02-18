@@ -7,7 +7,7 @@ body {
 #header {
   background-color: #DBB868;
   color: #5C4033;
-  font-size: 100px;
+  font-size: 125px;
   text-align: center;
 }
 
@@ -20,27 +20,27 @@ body {
 #Picture1 {
   position: absolute;
   left: 0px;
-  top: 150px;
+  top: 300px;
 }
 #Picture2 {
   position: absolute;
   left: 400px;
-  top: 150px;
+  top: 300px;
 }
 #Picture3 {
   position: absolute;
-  top: 150px;
+  top: 300px;
   right: 400px;
 }
 #Picture4 {
   position: absolute;
   right: 0px;
-  top: 150px;
+  top: 300px;
 }
 
 #buttons {
   text-align: center;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 a:hover {

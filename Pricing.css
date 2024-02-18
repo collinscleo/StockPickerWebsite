@@ -23,6 +23,10 @@ body {
   top: 300px;
 }
 
+#PPXT {
+  position: absolute;
+}
+
 #buttons {
   text-align: center;
   font-size: 25px;

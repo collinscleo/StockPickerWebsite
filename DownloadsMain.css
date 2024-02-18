@@ -1,15 +1,14 @@
 body {
   background-color: #DBB868;
-  color: brown;
+  color: black;
   font-family: 'Alegreya', sans-serif; /* Use the custom font */
 }
 
 #header {
   background-color: #DBB868;
   color: #5C4033;
-  font-size: 45px;
-  position: relative;
-  right: 10px;
+  font-size: 125px;
+  text-align: center;
 }
 
 #img {
@@ -19,12 +18,13 @@ body {
 }
 
 #buttons {
-  text-align: centered;
+  text-align: center;
+  font-size: 25px;
 }
 
 a:hover {
   color: #5C4033;
-  background-color: gray;
+  background-color: #747474;
 }
 
 a:visited {

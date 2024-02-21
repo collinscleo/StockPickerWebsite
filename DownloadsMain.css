@@ -21,11 +21,31 @@ body {
     text-align: center;
     font-size: 25px;
   }
-
-  #OSs {
-   font-size: 25px;
+  #OS{
+font-size: 40px;
   }
-  
+  #IOS{
+    position: absolute;
+    left: 85%;
+  }
+  #MacOS{
+    position: absolute;
+    left: 15px;
+   }
+   #LinuxOS{
+    position: absolute;
+    left: 20%
+   }
+   #WindowsOS{
+    position: absolute;
+    left: 40%;
+    top: 301px;
+   }
+   #AndroidOS{
+    position: absolute;
+    top: 301px;
+    left: 60%;
+   }
   a:hover {
     color: white;
     background-color: black;

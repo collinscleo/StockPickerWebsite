@@ -8,9 +8,9 @@ function Name() {
 var name = prompt("What's you're username?");
 if(name = "bezerkllama")
 {
-    alert=("Welcome, Bezerkllama");
+    alert("Welcome, Bezerkllama");
 }else
 {
-    alert=("Go Away!");
+    alert("Go Away!");
 }
 }

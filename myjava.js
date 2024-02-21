@@ -4,6 +4,6 @@ function PhotoChange1() {
 function PhotoChange2() {
     document.getElementById('myImage').src='Pricing.png'
 }
-function NextOne() {
-
+function Name() {
+var name = prompt("What/'s you/'re username?");
 }

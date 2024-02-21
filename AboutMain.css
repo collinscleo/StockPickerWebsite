@@ -1,7 +1,7 @@
 body {
     background-color: whitesmoke;
     color: black;
-    font-family: 'Alegreya', sans-serif; /* Use the custom font */
+    font-family: 'Times New Roman', Times, serif;
   }
   
   #header {
@@ -35,9 +35,4 @@ body {
   a:link {
     color: black;
     background-color: whitesmoke;
-  }
-  
-  @font-face {
-    font-family: 'YourFont';
-    src: url('C:\\Users\\Cleo Collins\\OneDrive\\Documents\\Alegreya-Regular.ttf') format('truetype');
   }

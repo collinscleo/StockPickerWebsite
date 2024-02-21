@@ -10,7 +10,10 @@ body {
     font-size: 50px;
     text-align: center;
   }
-  
+  #buttons {
+    position: relative;
+    font-size: medium;
+  }
   #img {
     position: absolute;
     top: 0px;

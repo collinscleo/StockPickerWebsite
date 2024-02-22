@@ -25,19 +25,19 @@ body {
   transition-duration: 0.4s;
   border-radius: 20%;
   }
-  
-  .button:hover {
-    background-color: whitesmoke;
-    color: blue;
-    border-color: blue;
-    border-radius: 20%;
-  }
   #img {
     position: absolute;
     top: 0%;
     left: 0%;
   }
-  
+  #hyper {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
   #buttons {
     text-align: center;
     font-size: 200%;

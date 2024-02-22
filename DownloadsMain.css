@@ -7,22 +7,22 @@ body {
   #header {
     background-color: whitesmoke;
     color: blue;
-    font-size: 50px;
+    font-size: 200%;
     text-align: center;
   }
   
   #img {
     position: absolute;
-    top: 0px;
-    right: 5px;
+    top: 0%;
+    right: 0%;
   }
   
   #buttons {
     text-align: center;
-    font-size: 25px;
+    font-size: 200%;
   }
   #OS{
-font-size: 40px;
+font-size: 250%;
   }
   #IOS{
     position: absolute;
@@ -30,7 +30,7 @@ font-size: 40px;
   }
   #MacOS{
     position: absolute;
-    left: 15px;
+    left: 5%;
    }
    #LinuxOS{
     position: absolute;
@@ -39,12 +39,12 @@ font-size: 40px;
    #WindowsOS{
     position: absolute;
     left: 40%;
-    top: 301px;
+    top: 27%;
    }
    #AndroidOS{
     position: absolute;
-    top: 301px;
-    left: 60%;
+    top: 27%;
+    left: 63%;
    }
   a:hover {
     color: white;

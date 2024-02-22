@@ -7,7 +7,7 @@ body {
   #header {
     background-color: whitesmoke;
     color: blue;
-    font-size: 50px;
+    font-size: 200%;
     text-align: center;
   }
   #buttons {
@@ -16,15 +16,15 @@ body {
   }
   #img {
     position: absolute;
-    top: 0px;
-    right: 5px;
+    top: 0%;
+    right: 0%;
   }
   #PPTXT {
     position: absolute;
   }
   #buttons {
     text-align: center;
-    font-size: 25px;
+    font-size: 200%;
   }
   
   a:hover {

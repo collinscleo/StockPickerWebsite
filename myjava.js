@@ -6,16 +6,6 @@ function PhotoChange2() {
 }
 function Name() {
 var name = prompt("What's you're username?");
-if(name == "Bezerkllama")
-{
-    alert("Welcome, Bezerkllama")
-}else if(name == "Cleo")
-{
-    alert("Go Away!")
-}else 
-{
-    alert("Welcome")
-}
 }
 function nextone() {
     

@@ -4,6 +4,3 @@ function PhotoChange1() {
 function PhotoChange2() {
     document.getElementById('myImage').src='Pricing.png'
 }
-function Tele() {
-<a href="Main.html" />
-}

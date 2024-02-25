@@ -35,24 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
-        // Perform your AJAX/Fetch login
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
-    });
-
-    document.querySelectorAll(".form__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (inputElement.id === "signupUsername" && inputElement.value.length > 0 && inputElement.value.length < 5) {
-                setInputError(inputElement, "Username must be at least 5 characters in length");
-            }
-        });
-
-        inputElement.addEventListener("input", e => {
-            clearInputError(inputElement);
-        })
-    });
-});
-// Function to save username and password to local storage
+        // Function to save username and password to local storage
 function saveCredentials(username, password) {
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
@@ -112,5 +95,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // Optionally, perform further actions (e.g., redirect to main page)
         alert("Account created successfully!");
         // Here you can redirect to another page or perform any other action
+    });
+});
+
+
+        setFormMessage(loginForm, "error", "Invalid username/password combination");
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (inputElement.id === "signupUsername" && inputElement.value.length > 0 && inputElement.value.length < 5) {
+                setInputError(inputElement, "Username must be at least 5 characters in length");
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        })
     });
 });

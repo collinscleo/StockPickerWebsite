@@ -52,3 +52,65 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
 });
+// Function to save username and password to local storage
+function saveCredentials(username, password) {
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+}
+
+// Function to check if the entered username and password match with the stored ones
+function verifyCredentials(username, password) {
+    const storedUsername = localStorage.getItem('username');
+    const storedPassword = localStorage.getItem('password');
+    return username === storedUsername && password === storedPassword;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("#login");
+    const createAccountForm = document.querySelector("#createAccount");
+
+    // Event listener for clicking "Create Account" link
+    document.querySelector('#linkcreateAccount').addEventListener("click", e => { 
+        e.preventDefault();
+        loginForm.classList.add("form--hidden");
+        createAccountForm.classList.remove("form--hidden");
+    });
+
+    // Event listener for clicking "Sign In" link
+    document.querySelector('#linkLogin').addEventListener("click", e => { 
+        e.preventDefault();
+        createAccountForm.classList.add("form--hidden");
+        loginForm.classList.remove("form--hidden");
+    });
+
+    // Event listener for form submission (Login)
+    loginForm.addEventListener("submit", e => {
+        e.preventDefault();
+        const usernameInput = loginForm.querySelector("#loginUsername");
+        const passwordInput = loginForm.querySelector("#loginPassword");
+
+        // Verify credentials
+        if (verifyCredentials(usernameInput.value, passwordInput.value)) {
+            // Credentials are correct, perform further actions (e.g., redirect to main page)
+            alert("Login successful!");
+            // Here you can redirect to another page or perform any other action
+        } else {
+            // Credentials are incorrect, display error message
+            setFormMessage(loginForm, "error", "Invalid username/password combination");
+        }
+    });
+
+    // Event listener for form submission (Create Account)
+    createAccountForm.addEventListener("submit", e => {
+        e.preventDefault();
+        const usernameInput = createAccountForm.querySelector("#signupUsername");
+        const passwordInput = createAccountForm.querySelector("#signupPassword");
+
+        // Save username and password to local storage
+        saveCredentials(usernameInput.value, passwordInput.value);
+
+        // Optionally, perform further actions (e.g., redirect to main page)
+        alert("Account created successfully!");
+        // Here you can redirect to another page or perform any other action
+    });
+});

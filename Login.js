@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
@@ -16,26 +25,7 @@ function clearInputError(inputElement) {
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("#login");
-    const createAccountForm = document.querySelector("#createAccount");
-
-    document.querySelector('#linkcreateAccount').addEventListener("click", e => { 
-        e.preventDefault();
-        loginForm.classList.add("form--hidden");
-        createAccountForm.classList.remove("form--hidden");
-    });
-
-    document.querySelector('#linkLogin').addEventListener("click", e => { 
-        e.preventDefault();
-        createAccountForm.classList.add("form--hidden");
-        loginForm.classList.remove("form--hidden");
-    });
-
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-
-        // Function to save username and password to local storage
+// Function to save username and password to local storage
 function saveCredentials(username, password) {
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
@@ -52,54 +42,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
 
-    // Event listener for clicking "Create Account" link
     document.querySelector('#linkcreateAccount').addEventListener("click", e => { 
         e.preventDefault();
         loginForm.classList.add("form--hidden");
         createAccountForm.classList.remove("form--hidden");
     });
 
-    // Event listener for clicking "Sign In" link
     document.querySelector('#linkLogin').addEventListener("click", e => { 
         e.preventDefault();
         createAccountForm.classList.add("form--hidden");
         loginForm.classList.remove("form--hidden");
     });
 
-    // Event listener for form submission (Login)
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-        const usernameInput = loginForm.querySelector("#loginUsername");
-        const passwordInput = loginForm.querySelector("#loginPassword");
+        const usernameInput = loginForm.querySelector(".form__input[placeholder='Username or Email']");
+        const passwordInput = loginForm.querySelector(".form__input[placeholder='Password']");
 
-        // Verify credentials
         if (verifyCredentials(usernameInput.value, passwordInput.value)) {
-            // Credentials are correct, perform further actions (e.g., redirect to main page)
             alert("Login successful!");
-            // Here you can redirect to another page or perform any other action
         } else {
-            // Credentials are incorrect, display error message
             setFormMessage(loginForm, "error", "Invalid username/password combination");
         }
     });
 
-    // Event listener for form submission (Create Account)
     createAccountForm.addEventListener("submit", e => {
         e.preventDefault();
-        const usernameInput = createAccountForm.querySelector("#signupUsername");
-        const passwordInput = createAccountForm.querySelector("#signupPassword");
+        const usernameInput = createAccountForm.querySelector(".form__input[placeholder='Username']");
+        const emailInput = createAccountForm.querySelector(".form__input[placeholder='Email Address']");
+        const passwordInput = createAccountForm.querySelector(".form__input[placeholder='Confirm password']");
 
-        // Save username and password to local storage
         saveCredentials(usernameInput.value, passwordInput.value);
-
-        // Optionally, perform further actions (e.g., redirect to main page)
         alert("Account created successfully!");
-        // Here you can redirect to another page or perform any other action
-    });
-});
-
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {

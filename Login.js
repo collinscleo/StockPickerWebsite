@@ -1,8 +1,6 @@
-var Username="pleasework"
+var uname=document.getElementById("username")
 var Passsword="hopeneverfails"
-
-if(Username!="pleasework", Passsword!="hopeneverfails") {
-    print("incorrect username and password")
-}else() =>{
-    print("Welcome pleasework!")
+function nametest() {
+uname= uname.innerText
+prompt(uname)
 }

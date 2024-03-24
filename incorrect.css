@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: red;
+}
+#error {
+    position: absolute;
+    font-size: 500%;
+    left: 40%;
+    top: 33%;
+}

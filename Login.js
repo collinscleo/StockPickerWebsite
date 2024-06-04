@@ -7,8 +7,8 @@ function alt() {
     } else if (name1 === "Cleo") {
         alert("Go away "+name1+" please talk to BZL to access this site.");
         window.location.href = "incorrect.html"
-    } else if (name1 === "Jackson") {
-        alert("Welcome, " + name1 + "!");
+    } else if (name1 === "Henry") {
+        alert("You have malware " + name1 + "!");
         window.location.href = "incorrect.html"
     }else {
         alert("Incorrect Username")
